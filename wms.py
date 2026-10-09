@@ -42,8 +42,8 @@ else:
 # --- Login ---
 if "logged_in" not in st.session_state: st.session_state.logged_in=False
 if not st.session_state.logged_in:
-    st.title("🔐 WMS 登入 - 永久版")
-   # ---  st.info("預設: admin / admin123") ---
+# --- st.title("🔐 WMS 登入 - 永久版") ---
+# --- st.info("預設: admin / admin123") ---
     u=st.text_input("帳號"); p=st.text_input("密碼", type="password")
     if st.button("登入", type="primary"):
         users=read_sheet("users")
